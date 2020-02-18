@@ -2,11 +2,11 @@
 
 <head>
   <meta charset="UTF-8">
-	<meta name="description" content="SPARQL unicorn">
-	<meta name="keywords" content="sparql,unicorn">
-	<meta name="author" content="Sophie C. Schmidt,Florian Thiery">
+	<meta name="description" content="The ᚑᚌᚔ Ogham Project">
+	<meta name="keywords" content="sparql,ogham">
+	<meta name="author" content="Sophie C. Schmidt,Florian Thiery,Timo Homburg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Ogi-Ogham Project</title>
+	<title>The ᚑᚌᚔ Ogham Project</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -16,13 +16,13 @@
             <span id="header"><center>The ᚑᚌᚔ Ogham Project </center></span>
         </h1>
     </div>
-    <a href="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20*%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ2016147%3B%0A%20%20%20%20wdt%3AP361%20wd%3AQ67978809.%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fitem%20rdfs%3Alabel%20%3Flabel.%0A%20%20%20%20FILTER((LANG(%3Flabel))%20%3D%20%22en%22)%0A%20%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP625%20%3Fgeo.%20%7D%0A%7D%0AORDER%20BY%20(%3Flabel)" target="_blank">
+    <a href="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0A%23%20Ogi%20Ogham%20Stones%0ASELECT%20%3Flabel%20%3Fitem%20%3Fgeo%20%3Fcountry%20%3Finscription%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ2016147%3B%0A%20%20%20%20wdt%3AP361%20wd%3AQ70873595.%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fitem%20rdfs%3Alabel%20%3Flabel.%0A%20%20%20%20FILTER((LANG(%3Flabel))%20%3D%20%22en%22)%0A%20%20%7D%0A%20%20%3Fitem%20wdt%3AP625%20%3Fgeo.%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP17%20%3FcountryWD.%20%3FcountryWD%20rdfs%3Alabel%20%3Fcountry.%20FILTER((LANG(%3Fcountry))%20%3D%20%22en%22)%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP1684%20%3Finscription.%20%7D%0A%7D%0AORDER%20BY%20(%3Flabel)" target="_blank">
         <div class="content loginbg"></div>
     </a>
     <div class="footer">
         <p>
-            <span style="float:left;">ogi-ogham&nbsp;v0.1 / <a href="https://github.com/ogi-ogham" target="_blank"><i><u>Git</i></u></a> / <a href="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20*%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ2016147%3B%0A%20%20%20%20wdt%3AP361%20wd%3AQ67978809.%0A%20%20OPTIONAL%20%7B%0A%20%20%20%20%3Fitem%20rdfs%3Alabel%20%3Flabel.%0A%20%20%20%20FILTER((LANG(%3Flabel))%20%3D%20%22en%22)%0A%20%20%7D%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP625%20%3Fgeo.%20%7D%0A%7D%0AORDER%20BY%20(%3Flabel)" target="_blank"><i><u>Wikidata Overview</i></u></a></span>
-            <span style="float:right;">build by <i>Sophie C. Schmidt & Florian Thiery</i></span>
+            <span style="float:left;">ogi-ogham&nbsp;v0.1 / <a href="https://github.com/ogi-ogham" target="_blank"><i><u>Git</i></u></a></span>
+            <span style="float:right;">by <i>Sophie C. Schmidt, Florian Thiery & Timo Homburg</i></span>
         </p>
     </div>
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
